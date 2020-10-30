@@ -42,3 +42,7 @@ exports.postDecisionDate = (req, res) => {
 exports.getDecisionDateExpired = (req, res) => {
   res.render('eligibility/decision-date-expired');
 };
+
+exports.getAppealInTime = (req, res) => {
+  res.render('eligibility/appeal-in-time');
+};
