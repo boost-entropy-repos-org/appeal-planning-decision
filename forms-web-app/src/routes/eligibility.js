@@ -21,7 +21,7 @@ router.post(
 /* GET eligibility decision date out page. */
 router.get('/decision-date-expired', eligibilityController.getDecisionDateExpired);
 
-/* GET eligibility appeal in time page. */
-router.get('/appeal-in-time', eligibilityController.getAppealInTime);
+/* GET eligibility planning department page. */
+router.get('/planning-department', eligibilityController.getPlanningDepartment);
 
 module.exports = router;

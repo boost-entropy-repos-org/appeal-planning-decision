@@ -43,6 +43,6 @@ exports.getDecisionDateExpired = (req, res) => {
   res.render('eligibility/decision-date-expired');
 };
 
-exports.getAppealInTime = (req, res) => {
-  res.render('eligibility/appeal-in-time');
+exports.getPlanningDepartment = (req, res) => {
+  res.render('eligibility/planning-department');
 };
