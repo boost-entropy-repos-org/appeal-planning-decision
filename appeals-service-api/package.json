@@ -1,19 +1,17 @@
 {
-  "name": "backend",
-  "version": "1.0.0",
+  "name": "appeals-service-api",
+  "version": "0.0.0",
   "main": "index.js",
-  "license": "MIT",
   "scripts": {
-    "dev": "nodemon src/server.js",
+    "dev": "nodemon src/server.js --ignore __tests__",
     "debug": "node --inspect-brk -r sucrase/register src/server.js",
     "lint": "eslint \"**/*.js\" --ignore-pattern node_modules/ --ignore-pattern dist/",
-    "lint:fix": "eslint \"**/*.js\" --ignore-pattern node_modules/ --ignore-pattern dist/ --fix",
-    "build": "sucrase ./src -d ./dist --transforms imports"
+    "build": "sucrase ./src -d ./dist --transforms imports",
+    "start": "node ./dist/server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
-    "eslint-plugin-import": "^2.22.1",
     "express": "^4.17.1",
     "express-async-errors": "^3.1.1",
     "mongoose": "^5.9.3",
@@ -22,14 +20,9 @@
     "yup": "^0.28.1"
   },
   "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.12.1",
+    "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-config-import": "^0.13.0",
-    "eslint-config-prettier": "^6.15.0",
-    "eslint-plugin-jest": "^24.1.0",
-    "eslint-plugin-prettier": "^3.1.4",
-    "nodemon": "^2.0.2",
-    "prettier": "2.1.2"
+    "eslint-plugin-import": "^2.20.0",
+    "nodemon": "^2.0.2"
   }
 }

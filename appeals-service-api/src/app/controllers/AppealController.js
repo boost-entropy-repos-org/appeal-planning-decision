@@ -8,6 +8,7 @@ import UpdateAppealService from '../services/UpdateAppealService';
 import DeleteAppealService from '../services/DeleteAppealService';
 import ControllerUtil from '../utils/ControllerUtil';
 
+
 class AppealController extends ControllerUtil {
   constructor() {
     super();
