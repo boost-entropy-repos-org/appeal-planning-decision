@@ -27,7 +27,7 @@ spec:
       replicaCount: 2
       image:
         repository: pinscommonukscontainersdefault.azurecr.io/forms-web-app
-        tag: 1.0.0
+        tag: 1.3.2
 
     ingress:
       enabled: false
