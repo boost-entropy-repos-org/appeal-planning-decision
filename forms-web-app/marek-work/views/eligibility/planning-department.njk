@@ -1,0 +1,61 @@
+{% extends "layouts/main.njk" %}
+{% from "govuk/components/button/macro.njk" import govukButton %},
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <form action="">
+        <div class="govuk-form-group">
+          <span class="govuk-caption-l">Before you start</span>
+            <label id="planning-department-label" class="govuk-label govuk-label--l" for="planning-department">What is the name of the local planning department?</label>
+            <div id="planning-department"></div>
+        </div>
+        <div class="govuk-form-group">
+          {{ govukButton({
+            text: "Continue",
+            type: "Submit"
+          }) }}
+        </div>
+      </form>
+  </div>
+</div> 
+
+<script>
+  /*
+  const lpas = [
+    'Buckinghamshire Council',
+    'Buckinghamshire County Council',
+    'Aylesbury Vale District Council',
+    'Chiltern District Council',
+    'South Bucks District Council',
+    'Wycombe District Council',
+    'Bournemouth, Christchurch and Poole Council',
+    'Dorset Council',
+    'Somerset West and Taunton Council',
+    'West Suffolk Council',
+    'East Suffolk Council',
+    'Weymouth and Portland',
+    'West Dorset District Council',
+    'Purbeck District Council',
+    'North Dorset District Council',
+    'East Dorset District Council',
+    'Dorset County Council',
+    'Christchurch Borough Council',
+    'Borough of Poole',
+    'Bournemouth Borough Council',
+    'Forest Heath District Council',
+    'West Somerset District Council',
+    'Taunton Deane Borough Council',
+    'Waveney District Council',
+    'Suffolk Coastal District Council'
+  ];
+  */
+  accessibleAutocomplete({
+    element: document.querySelector('#planning-department'),
+    id: 'planning-department-label', // To match it to the existing <label>.
+    source: {{ data|safe }}
+  });
+</script>
+
+{% endblock %}
