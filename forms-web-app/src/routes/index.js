@@ -2,6 +2,7 @@ const express = require('express');
 
 const router = express.Router();
 
+const appellantSubmission = require('./appellant-submission');
 const applicationNameRouter = require('./application-name');
 const applicationNumberRouter = require('./application-number');
 const checkAnswersRouter = require('./check-answers');
@@ -13,6 +14,7 @@ const taskListRouter = require('./task-list');
 const yourDetailsRouter = require('./your-details');
 
 router.use('/', homeRouter);
+router.use('/appellant-submission', appellantSubmission);
 router.use('/application-name', applicationNameRouter);
 router.use('/application-number', applicationNumberRouter);
 router.use('/check-answers', checkAnswersRouter);

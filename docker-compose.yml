@@ -66,6 +66,7 @@ services:
     environment:
       APPEALS_SERVICE_API_URL: http://appeals-service-api:3000
       DOCUMENT_SERVICE_API_URL: http://document-service-api:3000
+      FILE_UPLOAD_TMP_PATH: "/tmp"
       REDIS_HOST: redis
       REDIS_PORT: 6379
       SESSION_KEY: some_secure_key_goes_here

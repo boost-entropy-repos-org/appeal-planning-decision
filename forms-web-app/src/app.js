@@ -10,6 +10,7 @@ const redis = require('redis');
 const connectRedis = require('connect-redis');
 const pinoExpress = require('express-pino-logger');
 const uuid = require('uuid');
+const fileUpload = require('express-fileupload');
 require('express-async-errors');
 
 const config = require('./config');
@@ -60,6 +61,14 @@ app.use(
   '/assets',
   express.static(path.join(__dirname, '..', 'node_modules', 'accessible-autocomplete', 'dist')),
   express.static(path.join(__dirname, '..', 'node_modules', 'govuk-frontend', 'govuk', 'assets'))
+);
+app.use(
+  fileUpload({
+    abortOnLimit: true,
+    useTempFiles: true,
+    tempFileDir: config.fileUpload.tmpDir,
+    debug: true,
+  })
 );
 
 // Routes

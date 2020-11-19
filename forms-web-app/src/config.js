@@ -3,6 +3,9 @@ module.exports = {
     timeout: Number(process.env.APPEALS_SERVICE_API_TIMEOUT || 10000),
     url: process.env.APPEALS_SERVICE_API_URL,
   },
+  fileUpload: {
+    tmpDir: process.env.FILE_UPLOAD_TMP_PATH,
+  },
   logger: {
     level: process.env.LOGGER_LEVEL || 'info',
     redact: ['opts.body', 'config.server.sessionSecret'],

@@ -1,4 +1,5 @@
 const { use } = require('./router-mock');
+const appellantSubmission = require('../../../src/routes/appellant-submission/index');
 const applicationNameRouter = require('../../../src/routes/application-name');
 const applicationNumberRouter = require('../../../src/routes/application-number');
 const checkAnswersRouter = require('../../../src/routes/check-answers');
@@ -21,6 +22,7 @@ describe('routes/index', () => {
 
   it('should define the expected routes', () => {
     expect(use).toHaveBeenCalledWith('/', homeRouter);
+    expect(use).toHaveBeenCalledWith('/appellant-submission', appellantSubmission);
     expect(use).toHaveBeenCalledWith('/application-name', applicationNameRouter);
     expect(use).toHaveBeenCalledWith('/application-number', applicationNumberRouter);
     expect(use).toHaveBeenCalledWith('/check-answers', checkAnswersRouter);
@@ -29,6 +31,6 @@ describe('routes/index', () => {
     expect(use).toHaveBeenCalledWith('/submission', submissionRouter);
     expect(use).toHaveBeenCalledWith('/task-list', taskListRouter);
     expect(use).toHaveBeenCalledWith('/your-details', yourDetailsRouter);
-    expect(use.mock.calls.length).toBe(9);
+    expect(use.mock.calls.length).toBe(10);
   });
 });
