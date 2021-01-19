@@ -501,7 +501,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                 </a>
             </div>
             <p class="navbar-text">Feature:
-                <small>Appeal Submission Save and Continue Navigation - About the appeal site</small>
+                <small>Name of original applicant</small>
             </p>
         </div>
     </nav>
@@ -513,18 +513,15 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                 
                 
                 
-                <i class="fa fa-tags fa-lg"></i>
-                <span class="tag">@wip</span><span class="tag">@UI-ONLY</span>
+                <i class="fa fa-tag fa-lg"></i>
+                <span class="tag">@smoketest</span>
                 
                 
             </div>
             <h1>Feature:
-                <small>Appeal Submission Save and Continue Navigation - About the appeal site</small>
+                <small>Name of original applicant</small>
             </h1>
-            <p>As a prospective appellant, I want to be taken through the submission process efficiently
-so that I do not get confused.
-This feature file covers the navigation between the About-the-appeal-site to the task-list
-The navigation does not depend on the status of a sub-section</p>
+            <p>  Note: This feature describes behaviour for a newly created appeal</p>
         </div>
 
         <div class="clearfix"></div>
@@ -561,7 +558,7 @@ The navigation does not depend on the status of a sub-section</p>
         <tr>
             <td class="chart">
                 <canvas id="scenario-chart"></canvas>
-                <div class="total">9</div>
+                <div class="total">5</div>
             </td>
             <td>
                 <table class="tile_info">
@@ -572,7 +569,7 @@ The navigation does not depend on the status of a sub-section</p>
                                 Passed
                             </p>
                         </td>
-                        <td class="percentage">0.00 %</td>
+                        <td class="percentage">100.00 %</td>
                     </tr>
                     <tr>
                         <td>
@@ -586,16 +583,6 @@ The navigation does not depend on the status of a sub-section</p>
                     
                     </tr>
                     
-                    
-                    <tr>
-                        <td>
-                            <p data-toggle="tooltip" data-placement="left" title="Scenario is skipped">
-                                <i class="fa fa-arrow-circle-right skipped-color"></i>
-                                Skipped
-                            </p>
-                        </td>
-                        <td class="percentage">100.00 %</td>
-                    </tr>
                     
                 </table>
             </td>
@@ -690,17 +677,15 @@ The navigation does not depend on the status of a sub-section</p>
                     
                         
                         
-                            <i class="fa fa-tags fa-lg"></i>
+                            <i class="fa fa-tag fa-lg"></i>
                             
-                                <span class="tag">@wip</span>
-                            
-                                <span class="tag">@UI-ONLY</span>
+                                <span class="tag">@smoketest</span>
                             
                         
                     
                 </div>
 
-                <h2>Scenario: <small>Navigation - About the appeal site</small></h2>
+                <h2>Scenario: <small>Valid name</small></h2>
 
                 <ul class="nav navbar-right panel_toolbox">
                     <li>
@@ -712,13 +697,13 @@ The navigation does not depend on the status of a sub-section</p>
                     
 
                     
+
+                    
+
+                    
                         <li>
-                            <span class="step skipped-background" data-toggle="tooltip" title="Scenario is skipped">3</span>
+                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">5</span>
                         </li>
-                    
-
-                    
-
                     
 
                     
@@ -737,8 +722,8 @@ The navigation does not depend on the status of a sub-section</p>
 
                                 
                                     
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
                                         </div>
                                     
                                 
@@ -747,7 +732,7 @@ The navigation does not depend on the status of a sub-section</p>
                                     <span class="keyword highlight">Given </span>
 
                                     
-                                        the "Site location" is presented
+                                        appeal is made on behalf of another applicant
                                         
                                     
 
@@ -795,8 +780,8 @@ The navigation does not depend on the status of a sub-section</p>
 
                                 
                                     
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
                                         </div>
                                     
                                 
@@ -805,7 +790,7 @@ The navigation does not depend on the status of a sub-section</p>
                                     <span class="keyword highlight">When </span>
 
                                     
-                                        the "Site location" is submitted with valid values
+                                        original applicant name is submitted
                                         
                                     
 
@@ -853,8 +838,8 @@ The navigation does not depend on the status of a sub-section</p>
 
                                 
                                     
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
                                         </div>
                                     
                                 
@@ -863,7 +848,123 @@ The navigation does not depend on the status of a sub-section</p>
                                     <span class="keyword highlight">Then </span>
 
                                     
-                                        the "Site ownership" is presented
+                                        appeal tasks are presented
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        appeal is updated with the original applicant
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        Your Details section is "COMPLETED"
                                         
                                     
 
@@ -918,17 +1019,15 @@ The navigation does not depend on the status of a sub-section</p>
                     
                         
                         
-                            <i class="fa fa-tags fa-lg"></i>
+                            <i class="fa fa-tag fa-lg"></i>
                             
-                                <span class="tag">@wip</span>
-                            
-                                <span class="tag">@UI-ONLY</span>
+                                <span class="tag">@smoketest</span>
                             
                         
                     
                 </div>
 
-                <h2>Scenario: <small>Navigation - Site ownership with YES selected</small></h2>
+                <h2>Scenario: <small>Invalid name</small></h2>
 
                 <ul class="nav navbar-right panel_toolbox">
                     <li>
@@ -940,13 +1039,13 @@ The navigation does not depend on the status of a sub-section</p>
                     
 
                     
+
+                    
+
+                    
                         <li>
-                            <span class="step skipped-background" data-toggle="tooltip" title="Scenario is skipped">3</span>
+                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">6</span>
                         </li>
-                    
-
-                    
-
                     
 
                     
@@ -965,8 +1064,8 @@ The navigation does not depend on the status of a sub-section</p>
 
                                 
                                     
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
                                         </div>
                                     
                                 
@@ -975,7 +1074,7 @@ The navigation does not depend on the status of a sub-section</p>
                                     <span class="keyword highlight">Given </span>
 
                                     
-                                        the "Site ownership" is presented
+                                        appeal is made on behalf of another applicant
                                         
                                     
 
@@ -1023,8 +1122,8 @@ The navigation does not depend on the status of a sub-section</p>
 
                                 
                                     
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
                                         </div>
                                     
                                 
@@ -1033,7 +1132,7 @@ The navigation does not depend on the status of a sub-section</p>
                                     <span class="keyword highlight">When </span>
 
                                     
-                                        the "Site ownership" is submitted with a YES value
+                                        original applicant name "" is submitted
                                         
                                     
 
@@ -1081,8 +1180,8 @@ The navigation does not depend on the status of a sub-section</p>
 
                                 
                                     
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
                                         </div>
                                     
                                 
@@ -1091,7 +1190,181 @@ The navigation does not depend on the status of a sub-section</p>
                                     <span class="keyword highlight">Then </span>
 
                                     
-                                        the "Site access" is presented
+                                        original applicant value "" is invalid because "name missing"
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        applicant name is presented
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        appeal is not updated with the original applicant ""
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        Your Details section is "IN PROGRESS"
                                         
                                     
 
@@ -1146,17 +1419,15 @@ The navigation does not depend on the status of a sub-section</p>
                     
                         
                         
-                            <i class="fa fa-tags fa-lg"></i>
+                            <i class="fa fa-tag fa-lg"></i>
                             
-                                <span class="tag">@wip</span>
-                            
-                                <span class="tag">@UI-ONLY</span>
+                                <span class="tag">@smoketest</span>
                             
                         
                     
                 </div>
 
-                <h2>Scenario: <small>Navigation - Site ownership with NO selected</small></h2>
+                <h2>Scenario: <small>Invalid name</small></h2>
 
                 <ul class="nav navbar-right panel_toolbox">
                     <li>
@@ -1168,13 +1439,13 @@ The navigation does not depend on the status of a sub-section</p>
                     
 
                     
+
+                    
+
+                    
                         <li>
-                            <span class="step skipped-background" data-toggle="tooltip" title="Scenario is skipped">3</span>
+                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">6</span>
                         </li>
-                    
-
-                    
-
                     
 
                     
@@ -1193,8 +1464,8 @@ The navigation does not depend on the status of a sub-section</p>
 
                                 
                                     
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
                                         </div>
                                     
                                 
@@ -1203,7 +1474,7 @@ The navigation does not depend on the status of a sub-section</p>
                                     <span class="keyword highlight">Given </span>
 
                                     
-                                        the "Site ownership" is presented
+                                        appeal is made on behalf of another applicant
                                         
                                     
 
@@ -1251,8 +1522,8 @@ The navigation does not depend on the status of a sub-section</p>
 
                                 
                                     
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
                                         </div>
                                     
                                 
@@ -1261,7 +1532,7 @@ The navigation does not depend on the status of a sub-section</p>
                                     <span class="keyword highlight">When </span>
 
                                     
-                                        the "Site ownership" is submitted with a NO value
+                                        original applicant name "A" is submitted
                                         
                                     
 
@@ -1309,8 +1580,8 @@ The navigation does not depend on the status of a sub-section</p>
 
                                 
                                     
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
                                         </div>
                                     
                                 
@@ -1319,7 +1590,181 @@ The navigation does not depend on the status of a sub-section</p>
                                     <span class="keyword highlight">Then </span>
 
                                     
-                                        the "Site ownership certb" is presented
+                                        original applicant value "A" is invalid because "name outside size constraints"
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        applicant name is presented
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        appeal is not updated with the original applicant "A"
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        Your Details section is "IN PROGRESS"
                                         
                                     
 
@@ -1374,17 +1819,15 @@ The navigation does not depend on the status of a sub-section</p>
                     
                         
                         
-                            <i class="fa fa-tags fa-lg"></i>
+                            <i class="fa fa-tag fa-lg"></i>
                             
-                                <span class="tag">@wip</span>
-                            
-                                <span class="tag">@UI-ONLY</span>
+                                <span class="tag">@smoketest</span>
                             
                         
                     
                 </div>
 
-                <h2>Scenario: <small>Navigation - Site ownership certb with YES selected</small></h2>
+                <h2>Scenario: <small>Invalid name</small></h2>
 
                 <ul class="nav navbar-right panel_toolbox">
                     <li>
@@ -1396,13 +1839,13 @@ The navigation does not depend on the status of a sub-section</p>
                     
 
                     
+
+                    
+
+                    
                         <li>
-                            <span class="step skipped-background" data-toggle="tooltip" title="Scenario is skipped">3</span>
+                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">6</span>
                         </li>
-                    
-
-                    
-
                     
 
                     
@@ -1421,8 +1864,8 @@ The navigation does not depend on the status of a sub-section</p>
 
                                 
                                     
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
                                         </div>
                                     
                                 
@@ -1431,7 +1874,7 @@ The navigation does not depend on the status of a sub-section</p>
                                     <span class="keyword highlight">Given </span>
 
                                     
-                                        the "Site ownership certb" is presented
+                                        appeal is made on behalf of another applicant
                                         
                                     
 
@@ -1479,8 +1922,8 @@ The navigation does not depend on the status of a sub-section</p>
 
                                 
                                     
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
                                         </div>
                                     
                                 
@@ -1489,7 +1932,7 @@ The navigation does not depend on the status of a sub-section</p>
                                     <span class="keyword highlight">When </span>
 
                                     
-                                        the "Site ownership certb" is submitted with a YES value
+                                        original applicant name "Invalid name because it is eighty-one characters long  abcdefghijklmnopqrstuvwxyz" is submitted
                                         
                                     
 
@@ -1537,8 +1980,8 @@ The navigation does not depend on the status of a sub-section</p>
 
                                 
                                     
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
                                         </div>
                                     
                                 
@@ -1547,7 +1990,181 @@ The navigation does not depend on the status of a sub-section</p>
                                     <span class="keyword highlight">Then </span>
 
                                     
-                                        the "Site access" is presented
+                                        original applicant value "Invalid name because it is eighty-one characters long  abcdefghijklmnopqrstuvwxyz" is invalid because "name outside size constraints"
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        applicant name is presented
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        appeal is not updated with the original applicant "Invalid name because it is eighty-one characters long  abcdefghijklmnopqrstuvwxyz"
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        Your Details section is "IN PROGRESS"
                                         
                                     
 
@@ -1602,17 +2219,15 @@ The navigation does not depend on the status of a sub-section</p>
                     
                         
                         
-                            <i class="fa fa-tags fa-lg"></i>
+                            <i class="fa fa-tag fa-lg"></i>
                             
-                                <span class="tag">@wip</span>
-                            
-                                <span class="tag">@UI-ONLY</span>
+                                <span class="tag">@smoketest</span>
                             
                         
                     
                 </div>
 
-                <h2>Scenario: <small>Navigation - Site ownership certb with NO selected</small></h2>
+                <h2>Scenario: <small>Invalid name</small></h2>
 
                 <ul class="nav navbar-right panel_toolbox">
                     <li>
@@ -1624,13 +2239,13 @@ The navigation does not depend on the status of a sub-section</p>
                     
 
                     
+
+                    
+
+                    
                         <li>
-                            <span class="step skipped-background" data-toggle="tooltip" title="Scenario is skipped">3</span>
+                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">6</span>
                         </li>
-                    
-
-                    
-
                     
 
                     
@@ -1649,8 +2264,8 @@ The navigation does not depend on the status of a sub-section</p>
 
                                 
                                     
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
                                         </div>
                                     
                                 
@@ -1659,7 +2274,7 @@ The navigation does not depend on the status of a sub-section</p>
                                     <span class="keyword highlight">Given </span>
 
                                     
-                                        the "Site ownership certb" is presented
+                                        appeal is made on behalf of another applicant
                                         
                                     
 
@@ -1707,8 +2322,8 @@ The navigation does not depend on the status of a sub-section</p>
 
                                 
                                     
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
                                         </div>
                                     
                                 
@@ -1717,7 +2332,7 @@ The navigation does not depend on the status of a sub-section</p>
                                     <span class="keyword highlight">When </span>
 
                                     
-                                        the "Site ownership certb" is submitted with a NO value
+                                        original applicant name "Invalid name with prohibited characters *3(/+" is submitted
                                         
                                     
 
@@ -1765,8 +2380,8 @@ The navigation does not depend on the status of a sub-section</p>
 
                                 
                                     
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
                                         </div>
                                     
                                 
@@ -1775,119 +2390,7 @@ The navigation does not depend on the status of a sub-section</p>
                                     <span class="keyword highlight">Then </span>
 
                                     
-                                        the "Site access" is presented
-                                        
-                                    
-
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                        
-
-                    
-                
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-12 col-sm-12 col-xs-12">
-        <div class="x_panel" style="height: auto;">
-            <div class="x_title">
-
-                <div class="tags">
-                    
-                        
-                        
-                            <i class="fa fa-tags fa-lg"></i>
-                            
-                                <span class="tag">@wip</span>
-                            
-                                <span class="tag">@UI-ONLY</span>
-                            
-                        
-                    
-                </div>
-
-                <h2>Scenario: <small>Navigation - Site access with YES selected</small></h2>
-
-                <ul class="nav navbar-right panel_toolbox">
-                    <li>
-                        <a class="collapse-link"><i class="fa fa-chevron-down"></i></a>
-                    </li>
-
-                    
-
-                    
-
-                    
-                        <li>
-                            <span class="step skipped-background" data-toggle="tooltip" title="Scenario is skipped">3</span>
-                        </li>
-                    
-
-                    
-
-                    
-
-                    
-
-                    
-                </ul>
-
-                <div class="clearfix"></div>
-            </div>
-
-            <div class="x_content" style="display: none;">
-                <div class="scenario-step-container"></div>
-                    
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">Given </span>
-
-                                    
-                                        the "Site access" is presented
+                                        original applicant value "Invalid name with prohibited characters *3(/+" is invalid because "name with prohibited characters"
                                         
                                     
 
@@ -1935,17 +2438,17 @@ The navigation does not depend on the status of a sub-section</p>
 
                                 
                                     
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
                                         </div>
                                     
                                 
 
                                 <div class="text">
-                                    <span class="keyword highlight">When </span>
+                                    <span class="keyword highlight">And </span>
 
                                     
-                                        the "Site access" is submitted with a YES value
+                                        applicant name is presented
                                         
                                     
 
@@ -1993,129 +2496,17 @@ The navigation does not depend on the status of a sub-section</p>
 
                                 
                                     
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
                                         </div>
                                     
                                 
 
                                 <div class="text">
-                                    <span class="keyword highlight">Then </span>
+                                    <span class="keyword highlight">And </span>
 
                                     
-                                        the "Site safety" is presented
-                                        
-                                    
-
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                        
-
-                    
-                
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-12 col-sm-12 col-xs-12">
-        <div class="x_panel" style="height: auto;">
-            <div class="x_title">
-
-                <div class="tags">
-                    
-                        
-                        
-                            <i class="fa fa-tags fa-lg"></i>
-                            
-                                <span class="tag">@wip</span>
-                            
-                                <span class="tag">@UI-ONLY</span>
-                            
-                        
-                    
-                </div>
-
-                <h2>Scenario: <small>Navigation - Site access with NO selected</small></h2>
-
-                <ul class="nav navbar-right panel_toolbox">
-                    <li>
-                        <a class="collapse-link"><i class="fa fa-chevron-down"></i></a>
-                    </li>
-
-                    
-
-                    
-
-                    
-                        <li>
-                            <span class="step skipped-background" data-toggle="tooltip" title="Scenario is skipped">3</span>
-                        </li>
-                    
-
-                    
-
-                    
-
-                    
-
-                    
-                </ul>
-
-                <div class="clearfix"></div>
-            </div>
-
-            <div class="x_content" style="display: none;">
-                <div class="scenario-step-container"></div>
-                    
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">Given </span>
-
-                                    
-                                        the "Site access" is presented
+                                        appeal is not updated with the original applicant "Invalid name with prohibited characters *3(/+"
                                         
                                     
 
@@ -2163,531 +2554,17 @@ The navigation does not depend on the status of a sub-section</p>
 
                                 
                                     
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
                                         </div>
                                     
                                 
 
                                 <div class="text">
-                                    <span class="keyword highlight">When </span>
+                                    <span class="keyword highlight">And </span>
 
                                     
-                                        the "Site access" is submitted with a NO value and text about how access is restricted
-                                        
-                                    
-
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                        
-
-                    
-                
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">Then </span>
-
-                                    
-                                        the "Site safety" is presented
-                                        
-                                    
-
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                        
-
-                    
-                
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-12 col-sm-12 col-xs-12">
-        <div class="x_panel" style="height: auto;">
-            <div class="x_title">
-
-                <div class="tags">
-                    
-                        
-                        
-                            <i class="fa fa-tags fa-lg"></i>
-                            
-                                <span class="tag">@wip</span>
-                            
-                                <span class="tag">@UI-ONLY</span>
-                            
-                        
-                    
-                </div>
-
-                <h2>Scenario: <small>Navigation - Site access safety with YES selected</small></h2>
-
-                <ul class="nav navbar-right panel_toolbox">
-                    <li>
-                        <a class="collapse-link"><i class="fa fa-chevron-down"></i></a>
-                    </li>
-
-                    
-
-                    
-
-                    
-                        <li>
-                            <span class="step skipped-background" data-toggle="tooltip" title="Scenario is skipped">3</span>
-                        </li>
-                    
-
-                    
-
-                    
-
-                    
-
-                    
-                </ul>
-
-                <div class="clearfix"></div>
-            </div>
-
-            <div class="x_content" style="display: none;">
-                <div class="scenario-step-container"></div>
-                    
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">Given </span>
-
-                                    
-                                        the "Site safety" is presented
-                                        
-                                    
-
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                        
-
-                    
-                
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">When </span>
-
-                                    
-                                        the "Site safety" is submitted with a YES value and text about health and safety concerns
-                                        
-                                    
-
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                        
-
-                    
-                
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">Then </span>
-
-                                    
-                                        the "Appeal tasks" is presented
-                                        
-                                    
-
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                        
-
-                    
-                
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-12 col-sm-12 col-xs-12">
-        <div class="x_panel" style="height: auto;">
-            <div class="x_title">
-
-                <div class="tags">
-                    
-                        
-                        
-                            <i class="fa fa-tags fa-lg"></i>
-                            
-                                <span class="tag">@wip</span>
-                            
-                                <span class="tag">@UI-ONLY</span>
-                            
-                        
-                    
-                </div>
-
-                <h2>Scenario: <small>Navigation - Site access safety with NO selected</small></h2>
-
-                <ul class="nav navbar-right panel_toolbox">
-                    <li>
-                        <a class="collapse-link"><i class="fa fa-chevron-down"></i></a>
-                    </li>
-
-                    
-
-                    
-
-                    
-                        <li>
-                            <span class="step skipped-background" data-toggle="tooltip" title="Scenario is skipped">3</span>
-                        </li>
-                    
-
-                    
-
-                    
-
-                    
-
-                    
-                </ul>
-
-                <div class="clearfix"></div>
-            </div>
-
-            <div class="x_content" style="display: none;">
-                <div class="scenario-step-container"></div>
-                    
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">Given </span>
-
-                                    
-                                        the "Site safety" is presented
-                                        
-                                    
-
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                        
-
-                    
-                
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">When </span>
-
-                                    
-                                        the "Site safety" is submitted with a NO value
-                                        
-                                    
-
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                        
-
-                    
-                
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">Then </span>
-
-                                    
-                                        the "Appeal tasks" is presented
+                                        Your Details section is "IN PROGRESS"
                                         
                                     
 
@@ -2777,10 +2654,10 @@ The navigation does not depend on the status of a sub-section</p>
                     ],
                     datasets: [{
                         data: [
+                            5,
                             0,
                             0,
                             0,
-                            9,
                             0,
                             0
                         ],
